@@ -8,10 +8,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
   text = '';
 
-  mousedown() {
-    this.text = 'mousedown';
+  mousedown(event) {
+    this.text = event.clientX;
   }
   mouseup() {
     this.text = '';
+  }
+
+  mouseout() {
+    this.text = '';
+  }
+
+  mousemove(event) {
+    this.text = event.clientX + ':' + event.clientY + '///' + event.pageX + ':' + event.pageY;
   }
 }
