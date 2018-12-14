@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  text = '';
+
+  mousedown() {
+    this.text = 'mousedown';
+  }
+  mouseup() {
+    this.text = '';
+  }
 }
