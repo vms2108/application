@@ -1,3 +1,3 @@
-<div class="block" (mousedown)="mousedown($event)" (mouseup)="mouseup()" (mouseout)="mouseout()" (mousemove)="mousemove($event)"></div>
+<div class="block" (mousedown)="mousedown($event)" (mouseup)="mouseup($event)" (mouseout)="mouseout($event)" (mousemove)="mousemove($event)"></div>
 
-<div class="text">{{text}}</div>
+<div class="text">top: {{info.top}}| bottom: {{info.bottom}} | left: {{info.left}} | right: {{info.right}} {{text}} </div>
